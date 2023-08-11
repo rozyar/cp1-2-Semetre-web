@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Cp1 Web</title>
+</head>
+<body>
+    <h1>Task organizer</h1>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Cadastro tarefas V2</legend>
+                
+                <!-- Autor -->
+                <div class="input">
+                    <label for="author">Autor</label>
+                    <input type="text", name="authorName" id="author" placeholder="Digite seu nome">
+                </div>
+                
+                <!-- Tarefa -->
+                <div class="input">    
+                    <label for="task">Tarefa</label>
+                    <input type="text", name="taskName" id="task" placeholder="Digite a Tarefa">
+                </div>
+
+                <!-- Descrição -->
+                <div class="input">
+                    <label for="description">Descrição</label>
+                    <input type="text", name="descricao" id="description" placeholder="Digite a Descrição">
+                </div>
+                
+                <!-- departamento -->
+                <div class="input">
+                    <label for="department">Departamento</label>
+                    <input type="text", name="departamento" id="department" placeholder="Digite o Departamento" required>
+                </div>
+
+                <!-- importancia -->
+                <div class="select">
+                    <label for="important">Importancia</label>
+                    <select name="importancia" id="important">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                </div>
+
+                <div class="button">
+                    <button type="submit" id="addTask">Adicionar</button>
+                </div>
+                <div class="button">
+                    <button type="submit" id="organizer">Organizar por Importancia</button>
+                </div>
+
+            </fieldset>
+
+            <div class="tasksList">
+                <h1>Aqui vai as tasks</h1>
+            </div>
+        </form>
+
+</body>
+</html>

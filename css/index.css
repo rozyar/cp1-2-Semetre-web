@@ -1,0 +1,25 @@
+fieldset{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    margin: 5px;
+}
+
+.task-item{
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    flex-direction: column;
+    width: 400px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
