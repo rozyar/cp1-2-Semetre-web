@@ -44,7 +44,7 @@ add.addEventListener("click", (event) => {
         duracao: undefined    
     }
     
-    //adicionando o objeto no array
+    //adicionando os objetos na array
     taskArray.push(taskObject)
     //chamando a função que irá mostrar as tarefas na tela
     displayTasks()
