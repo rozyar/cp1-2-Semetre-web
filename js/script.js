@@ -29,6 +29,9 @@ add.addEventListener("click", (event) => {
     taskForm.reset();
     console.log(taskArray);
 });
+function validateInput(input) {
+    return input.value.trim() !== "";
+}
 organizer.addEventListener("click", (e) => {
     e.preventDefault();
     taskArray.sort((a, b) => a.importancia - b.importancia);
@@ -79,6 +82,7 @@ function addDuration(index) {
     taskArray[index].duracao = value;
     displayTasks();
 }
+let nome = "           Derick              ";
 //<teste>
 // function deletaTUDO(){
 //     taskArray.splice(0, taskArray.length)

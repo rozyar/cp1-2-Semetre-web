@@ -25,6 +25,7 @@ add.addEventListener("click", (event) => {
     // console.log(author.value, task.value, description.value, important.value)
 
     //criando um objeto com o valor dos inputs
+    
 
     let taskObject = {
         autor: autor.value,
@@ -42,6 +43,10 @@ add.addEventListener("click", (event) => {
     taskForm.reset()
     console.log(taskArray)
 })
+
+function validateInput(input: HTMLInputElement): boolean{
+    return input.value.trim() !== ""
+}
 
 organizer.addEventListener("click", (e) =>{
     e.preventDefault()
@@ -102,6 +107,8 @@ function addDuration(index:number){
     displayTasks()
 }
 
+
+let nome:string = "           Derick              "
 //<teste>
 // function deletaTUDO(){
 //     taskArray.splice(0, taskArray.length)
