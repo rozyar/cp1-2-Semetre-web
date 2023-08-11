@@ -14,6 +14,10 @@ add.addEventListener("click", (event) => {
     const important = document.querySelector("#important");
     // console.log(author.value, task.value, description.value, important.value)
     //criando um objeto com o valor dos inputs
+    if (!validateInput(autor) || !validateInput(task) || !validateInput(description) || !validateInput(department)) {
+        alert("Preencha todos os campos");
+        return;
+    }
     let taskObject = {
         autor: autor.value,
         task: task.value,
